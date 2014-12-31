@@ -13,12 +13,12 @@
       {{end}}
     </ul>
 
-    <ul class="sidebar-nav">
-      {{ with .Site.Params.github }}<li class="sidebar-nav-item"><a href="{{ . }}">GitHub</a></li>{{ end }}
-      {{ with .Site.Params.linkedin }}<li class="sidebar-nav-item"><a href="{{ . }}">LinkedIn</a></li>{{ end }}
-      {{ with .Site.Params.googleplus }}<li class="sidebar-nav-item"><a href="{{ . }}">Google+</a></li>{{ end }}
-      {{ with .Site.Params.facebook }}<li class="sidebar-nav-item"><a href="{{ . }}">Facebook</a></li>{{ end }}
-      {{ with .Site.Params.twitter }}<li class="sidebar-nav-item"><a href="{{ . }}">Twitter</a></li>{{ end }}
+    <ul class="sidebar-nav social-links">
+      {{ with .Site.Params.github }}<li class="sidebar-nav-item"><a class="symbol" title="circlegithubalt" href="{{ . }}"></a></li>{{ end }}
+      {{ with .Site.Params.linkedin }}<li class="sidebar-nav-item"><a class="symbol" title="circlelinkedin" href="{{ . }}"></a></li>{{ end }}
+      {{ with .Site.Params.googleplus }}<li class="sidebar-nav-item"><a class="symbol" title="circlegoogleplus" href="{{ . }}"></a></li>{{ end }}
+      {{ with .Site.Params.facebook }}<li class="sidebar-nav-item"><a class="symbol" title="circlefacebook" href="{{ . }}"></a></li>{{ end }}
+      {{ with .Site.Params.twitter }}<li class="sidebar-nav-item"><a class="symbol" title="circletwitterbird" href="{{ . }}"></a></li>{{ end }}
     </ul>
 
     <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseUrl }}/license">License</a><br/>
