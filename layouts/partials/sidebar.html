@@ -14,14 +14,18 @@
     </ul>
 
     <ul class="sidebar-nav social-links">
-      {{ with .Site.Params.github }}<li class="sidebar-nav-item"><a class="symbol" title="circlegithubalt" href="{{ . }}"></a></li>{{ end }}
-      {{ with .Site.Params.linkedin }}<li class="sidebar-nav-item"><a class="symbol" title="circlelinkedin" href="{{ . }}"></a></li>{{ end }}
-      {{ with .Site.Params.googleplus }}<li class="sidebar-nav-item"><a class="symbol" title="circlegoogleplus" href="{{ . }}"></a></li>{{ end }}
-      {{ with .Site.Params.facebook }}<li class="sidebar-nav-item"><a class="symbol" title="circlefacebook" href="{{ . }}"></a></li>{{ end }}
-      {{ with .Site.Params.twitter }}<li class="sidebar-nav-item"><a class="symbol" title="circletwitterbird" href="{{ . }}"></a></li>{{ end }}
+      {{ with .Site.Params.github }}<li class="sidebar-nav-item"><a class="symbol" title="circlegithubalt" href="{{ . }}" target="_blank"></a></li>{{ end }}
+      {{ with .Site.Params.linkedin }}<li class="sidebar-nav-item"><a class="symbol" title="circlelinkedin" href="{{ . }}" target="_blank"></a></li>{{ end }}
+      {{ with .Site.Params.googleplus }}<li class="sidebar-nav-item"><a class="symbol" title="circlegoogleplus" href="{{ . }}" target="_blank"></a></li>{{ end }}
+      {{ with .Site.Params.facebook }}<li class="sidebar-nav-item"><a class="symbol" title="circlefacebook" href="{{ . }}" target="_blank"></a></li>{{ end }}
+      {{ with .Site.Params.twitter }}<li class="sidebar-nav-item"><a class="symbol" title="circletwitterbird" href="{{ . }}" target="_blank"></a></li>{{ end }}
     </ul>
 
-    <p>Copyright &copy; {{ .Now.Format "2006" }} <a href="{{ .Site.BaseUrl }}/license">License</a><br/>
-       Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+    <p>Copyright &copy; {{ .Now.Format "2006" }}</p>
+
+    <p class="powered-by">
+      Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a>
+    </p>
+
   </div>
 </div>

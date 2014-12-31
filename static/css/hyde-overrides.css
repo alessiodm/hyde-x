@@ -21,10 +21,20 @@
 
 .sidebar-about img {
     margin: auto !important;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .sidebar-sticky {
     text-align: center;
+}
+
+.powered-by {
+    font-size: 10px;
 }
 
 @font-face {
