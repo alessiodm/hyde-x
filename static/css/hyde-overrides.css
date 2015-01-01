@@ -2,11 +2,30 @@
  * Tweaks and overrides to hyde.css
  */
 
+@font-face {
+    font-family: 'Jennifer Lynne';
+    src: url('/fonts/JenniferLynne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .sidebar-about h1 {
+  display: block;
   color: #fff;
-  margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  margin-bottom: 25px;
+  margin-top: 35px;
+  font-family: "Jennifer Lynne", serif;
   font-size: 2.5rem;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 .sidebar-nav {
@@ -35,37 +54,4 @@
 
 .powered-by {
     font-size: 10px;
-}
-
-@font-face {
-    font-family: 'Mono Social Icons Font';
-    src: url('/fonts/MonoSocialIconsFont-1.10.eot');
-    src: url('/fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
-         url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         url('/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.symbol, a.symbol:before {
-    font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    text-decoration: none !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-}
-
-a.symbol:before {
-    content: attr(title);
-    margin-right: 0.3em;
-    font-size: 130%;
 }
