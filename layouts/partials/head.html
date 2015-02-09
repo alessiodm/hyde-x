@@ -9,6 +9,29 @@
 
   <title>{{ .Title }} &middot; {{ .Site.Author.name }}</title>
 
+  <!-- Trick to fast load the fonts -->
+  <style>
+    @font-face {
+        font-family: 'Mono Social Icons Font';
+        src: url('/fonts/MonoSocialIconsFont-1.10.eot');
+        src: url('/fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+             url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+             url('/fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+        src: url('/fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+  </style>
+  <style>
+    @font-face {
+        font-family: 'Jennifer Lynne';
+        src: url('/fonts/JenniferLynne.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+  </style>
+
   <!-- CSS -->
   <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/poole.css">
   <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/hyde.css">
