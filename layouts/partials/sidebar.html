@@ -5,7 +5,7 @@
       <img src="http://www.gravatar.com/avatar/{{ . }}?s=200" alt="gravatar">
       {{ end }}
 
-      <h1>{{ .Site.Author.name }}</h1>
+      <h1><a href="{{ .Site.BaseUrl }}">{{ .Site.Author.name }}</a></h1>
 
       {{ with .Site.Params.tagline }}
       <p class="lead">{{ . }}</p>
